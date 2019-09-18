@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.min.js"></script>
+</head>
+<body>
+  <div id="template">
+    <ul>
+    {{#each people}}
+      <li><b>{{firstName}}</b> {{lastName.surname}}{{#if lastName.suffix}}, {{lastName.suffix}}{{/if}}</li>
+  {{/each}}
+    </ul>
+  </div>
+</body>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="code.js"></script>
+</html>
